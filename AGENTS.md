@@ -29,13 +29,24 @@ Design mobile-first and adapt layouts for phone and laptop widths with CSS media
 - Keep page content in semantic HTML and styling in the shared external stylesheet `style.css`; do not add page-level `<style>` blocks or inline style attributes.
 - Load shared CSS from each page using a relative `<link rel="stylesheet">`. Reuse shared class names and design tokens rather than introducing inconsistent per-page colors or typography.
 - Keep JavaScript in an external `script.js` when interaction requires it. Prefer native HTML behavior and progressive enhancement; do not use JavaScript for static content or styling that belongs in CSS.
-- Make interactive controls keyboard accessible, use descriptive link text, and provide visible focus styles.
-- There is no backend. A contact form must not claim to send or store messages. If included, validate required fields and email input in JavaScript, explain that submission is not automatic, and direct visitors to `dnp67@njit.edu` with a clearly available `mailto:` link. Do not collect or transmit form data to an unconfigured service.
 - Use relative links for pages and local assets so the static site works when hosted from the repository.
+
+## Interactivity with JavaScript
+
+- Include at least two useful interactive elements across the site. One must be a responsive navigation menu, such as a hamburger menu on mobile devices.
+- Other suitable interactions include a project image slider or carousel, client-side contact-form validation, a light/dark mode toggle, or animations and effects.
+- Keep JavaScript in the external `script.js`, make controls keyboard accessible, and provide visible focus styles. Respect reduced-motion preferences for animations.
+- There is no backend. A contact form must not claim to send or store messages. If included, validate required fields and email input in JavaScript, explain that submission is not automatic, and direct visitors to `dnp67@njit.edu` with a clearly available `mailto:` link. Do not collect or transmit form data to an unconfigured service.
 
 ## Assets and Content
 
-Keep project images and other local media in a clearly named assets directory, use optimized formats and descriptive filenames, and include useful `alt` text. Do not use placeholder project claims or present unavailable links as working links.
+Keep project images and other local media in a clearly named assets directory, use optimized formats and descriptive filenames, and keep each image file under 500 KB. Add an `alt` attribute to every image, with a meaningful description for informative images and an empty value for decorative images. Do not use placeholder project claims or present unavailable links as working links.
+
+## Accessibility and Best Practices
+
+- Maintain sufficient color contrast and logical semantic structure.
+- Test keyboard navigation so all interactive controls can be reached and used without a pointer.
+- Run Lighthouse in Chrome DevTools and aim for an Accessibility score of 90 or higher.
 
 ## Validation
 
