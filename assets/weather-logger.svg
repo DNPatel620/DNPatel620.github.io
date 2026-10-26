@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Weather logger illustration</title>
+  <desc id="desc">A cloud and sun sit above a weather readings log.</desc>
+  <rect width="720" height="420" rx="28" fill="#edf3ff"/>
+  <circle cx="524" cy="129" r="52" fill="#ffcf70"/>
+  <g stroke="#efaa39" stroke-linecap="round" stroke-width="7">
+    <path d="M524 48V29M524 229v-19M443 129h-19M624 129h-19M467 72l-14-14M596 200l-14-14M581 72l14-14M467 186l-14 14"/>
+  </g>
+  <path d="M179 225c-30 0-54-23-54-52 0-27 20-49 47-52 10-39 44-66 85-66 38 0 70 24 83 58 34-3 63 23 63 56 0 31-25 56-56 56Z" fill="#fff" stroke="#cbd9f0" stroke-width="5"/>
+  <path d="M248 90c-24 5-44 22-52 45" fill="none" stroke="#dbe8ff" stroke-linecap="round" stroke-width="7"/>
+  <rect x="111" y="276" width="498" height="80" rx="16" fill="#fff" stroke="#cbd9f0" stroke-width="3"/>
+  <rect x="139" y="299" width="140" height="12" rx="6" fill="#344761"/>
+  <rect x="139" y="323" width="88" height="9" rx="4.5" fill="#a6b6d0"/>
+  <path d="M320 333v-18l19-14 17 8 22-22 19 14 21-20 21 6 22-24 23 8 20-20" fill="none" stroke="#2863d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <circle cx="523" cy="251" r="10" fill="#4380e6"/>
+  <circle cx="573" cy="68" r="8" fill="#4380e6"/>
+  <circle cx="90" cy="184" r="7" fill="#4380e6"/>
+</svg>

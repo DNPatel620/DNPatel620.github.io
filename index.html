@@ -3,10 +3,60 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dhruv N Patel</title>
+    <title>Dhruv N Patel | Portfolio</title>
+    <meta name="description" content="Meet Dhruv N Patel, a Mechanical Engineering Technology student at NJIT.">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Dhruv N Patel</h1>
-    <p>Hello, I am study Mechanical Engineering Technology in NJIT.</p>
+    <div class="site-shell">
+      <a class="skip-link" href="#main-content">Skip to main content</a>
+      <header class="site-header">
+        <div class="header-topbar">
+          <a class="brand" href="index.html" aria-label="Dhruv N Patel home">
+            <span class="monogram" aria-hidden="true">DP</span>
+            <span>Dhruv N Patel</span>
+          </a>
+          <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" hidden>
+            <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="menu-toggle-label">Menu</span>
+          </button>
+        </div>
+        <nav id="site-navigation" class="primary-navigation" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="main-content" class="page-content">
+        <section class="hero" aria-labelledby="intro-title">
+          <div class="intro">
+            <p class="eyebrow">Mechanical Engineering Technology</p>
+            <h1 id="intro-title">Dhruv N Patel</h1>
+            <p class="description">Hello, I am studying Mechanical Engineering Technology at NJIT.</p>
+            <p class="field">New Jersey Institute of Technology</p>
+          </div>
+          <div class="visual" aria-hidden="true">
+            <span class="orbit"></span>
+            <span class="dot dot-one"></span>
+            <span class="dot dot-two"></span>
+            <div class="badge">
+              <strong>NJIT</strong>
+              <span>ENGINEERING</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Dhruv N Patel <span aria-hidden="true">·</span> Mechanical Engineering Technology</p>
+        <a href="mailto:dnp67@njit.edu">dnp67@njit.edu</a>
+      </footer>
+    </div>
+    <script src="script.js" defer></script>
   </body>
 </html>

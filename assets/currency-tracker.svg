@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">Currency exchange tracker illustration</title>
+  <desc id="desc">Two currency symbols are connected by exchange arrows and a rate chart.</desc>
+  <rect width="720" height="420" rx="28" fill="#edf3ff"/>
+  <circle cx="228" cy="160" r="92" fill="#fff" stroke="#cbd9f0" stroke-width="5"/>
+  <circle cx="492" cy="160" r="92" fill="#fff" stroke="#cbd9f0" stroke-width="5"/>
+  <circle cx="228" cy="160" r="68" fill="#3678eb"/>
+  <circle cx="492" cy="160" r="68" fill="#2863d5"/>
+  <text x="228" y="184" fill="#fff" font-family="Arial, sans-serif" font-size="70" font-weight="700" text-anchor="middle">$</text>
+  <text x="492" y="184" fill="#fff" font-family="Arial, sans-serif" font-size="70" font-weight="700" text-anchor="middle">€</text>
+  <path d="M333 128h53l-14-14m14 14-14 14M387 194h-53l14-14m-14 14 14 14" fill="none" stroke="#344761" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+  <rect x="142" y="294" width="436" height="72" rx="16" fill="#fff" stroke="#cbd9f0" stroke-width="3"/>
+  <rect x="170" y="320" width="85" height="12" rx="6" fill="#344761"/>
+  <path d="M302 342v-17l25-19 23 10 24-25 23 13 28-34 26 11 26-18 31-21" fill="none" stroke="#2863d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <circle cx="508" cy="242" r="8" fill="#4380e6"/>
+  <circle cx="117" cy="105" r="8" fill="#4380e6"/>
+  <circle cx="601" cy="257" r="8" fill="#4380e6"/>
+</svg>

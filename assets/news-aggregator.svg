@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+  <title id="title">News aggregator illustration</title>
+  <desc id="desc">News cards flow toward a database storage icon.</desc>
+  <rect width="720" height="420" rx="28" fill="#edf3ff"/>
+  <circle cx="100" cy="78" r="42" fill="#dbe8ff"/>
+  <rect x="72" y="85" width="300" height="228" rx="18" fill="#fff" stroke="#cbd9f0" stroke-width="3"/>
+  <rect x="96" y="108" width="132" height="83" rx="10" fill="#dbe8ff"/>
+  <path d="M110 174 143 136l22 24 15-14 34 28Z" fill="#5485df"/>
+  <circle cx="194" cy="128" r="8" fill="#2863d5"/>
+  <rect x="247" y="112" width="98" height="12" rx="6" fill="#2863d5"/>
+  <rect x="247" y="136" width="78" height="9" rx="4.5" fill="#a6b6d0"/>
+  <rect x="247" y="155" width="88" height="9" rx="4.5" fill="#a6b6d0"/>
+  <rect x="96" y="210" width="250" height="12" rx="6" fill="#344761"/>
+  <rect x="96" y="237" width="222" height="9" rx="4.5" fill="#a6b6d0"/>
+  <rect x="96" y="257" width="234" height="9" rx="4.5" fill="#a6b6d0"/>
+  <path d="M394 198h94" fill="none" stroke="#2863d5" stroke-linecap="round" stroke-width="8"/>
+  <path d="m472 179 21 19-21 19" fill="none" stroke="#2863d5" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+  <ellipse cx="576" cy="137" rx="70" ry="26" fill="#3678eb"/>
+  <path d="M506 137v139c0 15 31 27 70 27s70-12 70-27V137" fill="#2863d5"/>
+  <path d="M506 182c0 15 31 27 70 27s70-12 70-27M506 229c0 15 31 27 70 27s70-12 70-27" fill="none" stroke="#a9c5fa" stroke-width="5"/>
+  <ellipse cx="576" cy="137" rx="70" ry="26" fill="none" stroke="#a9c5fa" stroke-width="5"/>
+  <circle cx="628" cy="76" r="9" fill="#4380e6"/>
+</svg>

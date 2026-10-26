@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Dhruv N Patel</title>
+    <meta name="description" content="Contact Dhruv N Patel by email and find links to his professional profiles.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <a class="skip-link" href="#main-content">Skip to main content</a>
+      <header class="site-header">
+        <div class="header-topbar">
+          <a class="brand" href="index.html" aria-label="Dhruv N Patel home">
+            <span class="monogram" aria-hidden="true">DP</span>
+            <span>Dhruv N Patel</span>
+          </a>
+          <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" hidden>
+            <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="menu-toggle-label">Menu</span>
+          </button>
+        </div>
+        <nav id="site-navigation" class="primary-navigation" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="main-content" class="page-content content-page">
+        <header class="page-heading">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s connect</h1>
+          <p class="page-lede">For questions or opportunities, you can reach me by email.</p>
+        </header>
+
+        <section class="contact-layout" aria-label="Contact information and profile links">
+          <article class="content-card contact-card">
+            <h2>Email</h2>
+            <p>Send me a message at:</p>
+            <a class="contact-email" href="mailto:dnp67@njit.edu">dnp67@njit.edu</a>
+            <p class="form-note">The form below does not send or store messages. Email is the direct way to reach me.</p>
+            <form class="contact-form" id="contact-form" hidden novalidate>
+              <div class="form-field">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="5" required></textarea>
+              </div>
+              <button class="button button-primary" type="submit">Check message</button>
+              <p class="form-status" id="contact-form-status" aria-live="polite"></p>
+            </form>
+          </article>
+          <article class="content-card contact-card">
+            <h2>Profile links</h2>
+            <p>Professional links will be added here when available.</p>
+            <ul class="profile-link-list">
+              <li>LinkedIn <span>Link to be added</span></li>
+              <li>GitHub <span>Link to be added</span></li>
+              <li>Résumé <span>Link to be added</span></li>
+            </ul>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Dhruv N Patel <span aria-hidden="true">·</span> Mechanical Engineering Technology</p>
+        <a href="mailto:dnp67@njit.edu">dnp67@njit.edu</a>
+      </footer>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
