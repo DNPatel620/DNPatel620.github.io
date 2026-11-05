@@ -62,7 +62,14 @@ if (contactForm) {
       return;
     }
 
-    status.textContent =
-      "Your message has not been sent or stored. Please email dnp67@njit.edu directly.";
+    const name = contactForm.elements.name.value.trim();
+    const email = contactForm.elements.email.value.trim();
+    const message = contactForm.elements.message.value.trim();
+    const subject = `Portfolio message from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+    const mailto = `mailto:dnp67@njit.edu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    status.textContent = "Opening an email draft. Review it in your email app and send it from there.";
+    window.location.href = mailto;
   });
 }

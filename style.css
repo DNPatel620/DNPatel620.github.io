@@ -261,11 +261,13 @@ h1 {
   border: 1px solid rgba(40, 99, 213, 0.12);
   border-radius: 50%;
   content: "";
+  animation: ring-breathe 6s ease-in-out infinite;
 }
 
 .visual::after {
   width: 250px;
   height: 250px;
+  animation-delay: -3s;
 }
 
 .orbit {
@@ -275,55 +277,127 @@ h1 {
   transform: rotate(-38deg);
   border: 1px solid rgba(40, 99, 213, 0.17);
   border-radius: 50%;
+  animation: orbit-breathe 7s ease-in-out infinite;
+}
+
+.orbital-dots {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  --orbit-radius-x: 195px;
+  --orbit-radius-y: 75px;
+  width: 390px;
+  height: 150px;
+  transform: translate(-50%, -50%) rotate(-38deg);
+}
+
+.orbital-dots-outer {
+  width: 330px;
+  height: 330px;
+  --orbit-radius-x: 165px;
+  --orbit-radius-y: 165px;
+  transform: translate(-50%, -50%);
+}
+
+.orbital-dots-inner {
+  width: 250px;
+  height: 250px;
+  --orbit-radius-x: 125px;
+  --orbit-radius-y: 125px;
+  transform: translate(-50%, -50%);
+}
+
+.orbital-dots-oval {
+  width: 390px;
+  height: 150px;
 }
 
 .badge {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   display: grid;
   width: 174px;
   height: 174px;
-  place-content: center;
-  gap: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  place-items: center;
+  border: 7px solid #fff;
   border-radius: 50%;
-  color: var(--surface);
-  background: linear-gradient(145deg, #3678eb, #1f54b8);
-  box-shadow: 0 22px 44px rgba(38, 91, 183, 0.25);
-  text-align: center;
+  background: #c32032;
+  box-shadow: 0 22px 44px rgba(149, 25, 41, 0.22);
+  animation: badge-float 4s ease-in-out infinite;
 }
 
-.badge strong {
-  font-size: 2.1rem;
-  letter-spacing: -0.06em;
-}
-
-.badge span {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
+.badge img {
+  display: block;
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  object-fit: contain;
 }
 
 .dot {
   position: absolute;
-  z-index: 1;
-  width: 12px;
-  height: 12px;
-  border: 3px solid #edf3ff;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #fff;
   border-radius: 50%;
-  background: #4380e6;
+  background: #c32032;
+  box-shadow: 0 2px 8px rgba(20, 35, 59, 0.35);
+  offset-path: ellipse(var(--orbit-radius-x) var(--orbit-radius-y) at 50% 50%);
+  offset-anchor: center;
+  offset-rotate: 0deg;
+  animation: dot-travel 8s linear infinite;
 }
 
 .dot-one {
-  top: 23%;
-  left: 25%;
+  offset-distance: 0%;
+  animation-delay: -4s;
 }
 
 .dot-two {
-  right: 18%;
-  bottom: 27%;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
+  offset-distance: 50%;
+}
+
+.dot-three {
+  width: 14px;
+  height: 14px;
+  offset-distance: 72%;
+  animation-delay: -2s;
+}
+
+@keyframes dot-travel {
+  from { offset-distance: 0%; }
+  to { offset-distance: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dot,
+  .orbital-dots,
+  .visual::before,
+  .visual::after,
+  .orbit,
+  .badge {
+    animation: none;
+  }
+}
+
+@keyframes badge-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+
+@keyframes ring-breathe {
+  0%, 100% { opacity: 0.65; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1.03); }
+}
+
+@keyframes orbit-breathe {
+  0%, 100% { opacity: 0.65; transform: rotate(-38deg) scale(0.97); }
+  50% { opacity: 1; transform: rotate(-38deg) scale(1.03); }
 }
 
 .site-footer {
@@ -717,9 +791,39 @@ h1 {
     height: 125px;
   }
 
+  .orbital-dots {
+    --orbit-radius-x: 165px;
+    --orbit-radius-y: 62.5px;
+  }
+
+  .orbital-dots-outer {
+    width: 280px;
+    height: 280px;
+    --orbit-radius-x: 140px;
+    --orbit-radius-y: 140px;
+  }
+
+  .orbital-dots-inner {
+    width: 210px;
+    height: 210px;
+    --orbit-radius-x: 105px;
+    --orbit-radius-y: 105px;
+  }
+
+  .orbital-dots-oval {
+    width: 330px;
+    height: 125px;
+  }
+
   .badge {
     width: 142px;
     height: 142px;
+    border-width: 6px;
+  }
+
+  .badge img {
+    width: 116px;
+    height: 116px;
   }
 
   .site-footer {

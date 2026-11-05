@@ -40,13 +40,15 @@ Design mobile-first and adapt layouts for phone and laptop widths with CSS media
 
 ## Assets and Content
 
-Keep project images and other local media in a clearly named assets directory, use optimized formats and descriptive filenames, and keep each image file under 500 KB. Add an `alt` attribute to every image, with a meaningful description for informative images and an empty value for decorative images. Do not use placeholder project claims or present unavailable links as working links.
+Keep project images and other local media in a clearly named assets directory, use optimized formats and descriptive filenames, and do not use placeholder project claims or present unavailable links as working links.
 
 ## Accessibility and Best Practices
 
+- Add an `alt` attribute to every image, with a meaningful description for informative images and an empty value for decorative images.
 - Maintain sufficient color contrast and logical semantic structure.
 - Test keyboard navigation so all interactive controls can be reached and used without a pointer.
 - Run Lighthouse in Chrome DevTools and aim for an Accessibility score of 90 or higher.
+- Keep image files under 500 KB.
 
 ## Validation
 
