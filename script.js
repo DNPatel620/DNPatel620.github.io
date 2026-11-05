@@ -2,6 +2,41 @@
 
 document.documentElement.classList.add("js-enabled");
 
+const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
+let savedTheme = null;
+try {
+  savedTheme = localStorage.getItem("portfolio-theme");
+} catch {
+  // Switching remains available when browser storage is blocked.
+}
+if (savedTheme !== "light" && savedTheme !== "dark") savedTheme = null;
+
+const applyTheme = (theme) => {
+  document.documentElement.dataset.theme = theme;
+  const toggle = document.querySelector(".theme-toggle");
+  if (toggle) toggle.setAttribute("aria-pressed", String(theme === "dark"));
+};
+applyTheme(savedTheme || (systemTheme.matches ? "dark" : "light"));
+systemTheme.addEventListener("change", (event) => {
+  if (!savedTheme) applyTheme(event.matches ? "dark" : "light");
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggle = document.querySelector(".theme-toggle");
+  if (themeToggle) {
+    applyTheme(document.documentElement.dataset.theme);
+    themeToggle.hidden = false;
+    themeToggle.addEventListener("click", () => {
+      savedTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      applyTheme(savedTheme);
+      try {
+        localStorage.setItem("portfolio-theme", savedTheme);
+      } catch {
+        // Keep the selection for this page when persistence is unavailable.
+      }
+    });
+  }
+
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = menuToggle
   ? document.getElementById(menuToggle.getAttribute("aria-controls"))
@@ -73,3 +108,5 @@ if (contactForm) {
     window.location.href = mailto;
   });
 }
+
+});
